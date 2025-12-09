@@ -1,136 +1,114 @@
+Medi-Alert Buddy
 
+Medi-Alert Buddy is a full-stack health assistant web application that helps users manage medications, track weight progress, and trigger emergency alerts. The application is built with React, TypeScript, Vite, Tailwind CSS, shadcn-ui, and Supabase.
 
-```md
-# Medi-Alert Buddy
+------------------------------------------------------------
+KEY FEATURES
+------------------------------------------------------------
 
-Medi-Alert Buddy is a full-stack health assistant web application that helps users manage medications, track weight progress, and trigger emergency alerts. Built with React, TypeScript, Vite, Tailwind CSS, shadcn-ui, and Supabase, the application focuses on clean UI, secure authentication, and a smooth user experience.
-
----
-
-## Key Features
-
-### Medication Management
+Medication Management:
 - Add, edit, and delete medication schedules
 - Reminder workflow for upcoming doses
 - Dashboard showing daily medications
 - Prevents duplicate or invalid entries
 
-### Built-In Medicine Database
+Built-In Medicine Database:
 - Preloaded medicine list stored in Supabase
 - Fast search and autocomplete functionality
 - Ensures accurate medication naming and consistency
 
-### Weight Tracker & Analytics
+Weight Tracker and Analytics:
 - Set a personal goal weight
 - Log daily or weekly weight entries
-- View interactive charts for progress analysis
-- Weekly summaries for progress, stability, or regressions
+- Interactive charts for progress analysis
+- Weekly summaries showing progress, stability, or regressions
 - Export weight history and analytics as PDF or CSV
-- User-specific data stored securely in Supabase
+- User-specific weight data stored securely in Supabase
 
-### Emergency SOS System
+Emergency SOS System:
 - One-click emergency alert trigger
-- Ready for integration with SMS/WhatsApp alert APIs
-- Architecture prepared for future geolocation support
+- Ready for integration with SMS or WhatsApp API services
+- Architecture supports geolocation-based alerts in the future
 
-### User Authentication
-- Secure login and signup with Supabase Auth
+User Authentication:
+- Secure login and signup using Supabase Auth
 - Protected routes and session handling
-- Data isolated per user
+- Data isolated per individual user
 
-### Modern UI/UX
-- Built using shadcn-ui component library
-- Responsive and mobile-first design
-- Clean, readable layouts
+Modern UI and User Experience:
+- Clean and responsive UI built using shadcn-ui components
+- Tailwind CSS for mobile-first layout
+- Designed for accessibility and ease of use
 
----
+------------------------------------------------------------
+TECH STACK
+------------------------------------------------------------
 
-## Tech Stack
-
-**Frontend:**  
+Frontend:
 React, TypeScript, Vite, Tailwind CSS, shadcn-ui
 
-**Backend / Database:**  
+Backend and Database:
 Supabase (PostgreSQL, Auth, Realtime)
 
-**Tools:**  
-Git, GitHub, Node.js, npm, VS Code
+Tools Used:
+Node.js, npm, Git, GitHub, VS Code
 
----
+------------------------------------------------------------
+PROJECT STRUCTURE (SIMPLIFIED)
+------------------------------------------------------------
 
-## Project Structure
+src/
+  components/       Reusable UI components
+  pages/            Dashboard, Auth, Medications, Weight Tracker
+  hooks/            Custom logic such as useAuth, useMedicines, useWeightTracker
+  lib/              Supabase client and helpers
+  data/             Preloaded medicine dataset
+  utils/            Helper functions including export utilities
+  App.tsx           Application entry point
 
-```
+------------------------------------------------------------
+GETTING STARTED
+------------------------------------------------------------
 
-/src
-├── components/
-├── pages/
-├── hooks/
-├── lib/
-├── data/
-├── utils/
-└── App.tsx
+1. Clone the repository:
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
 
-````
+2. Install dependencies:
+   npm install
 
----
+3. Add environment variables:
+   Create a file named .env
 
-## Getting Started
+   Inside .env:
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-````
+4. Run the application:
+   npm run dev
 
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Environment variables
-
-Create a `.env` file:
-
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-### 4. Run the app
-
-```bash
-npm run dev
-```
-
-The app will run at:
-
-```
+The app will be available at:
 http://localhost:5173
-```
 
----
+------------------------------------------------------------
+FUTURE ENHANCEMENTS
+------------------------------------------------------------
 
-## Future Enhancements
+- Push notification reminders
+- Location-based emergency alerts
+- More detailed analytics for health patterns
+- Caregiver dashboard
+- Offline mode with caching
 
-* Push notification reminders
-* Location-based emergency alerts
-* Advanced analytics for weight and health patterns
-* Caregiver dashboard
-* Offline mode with caching
+------------------------------------------------------------
+DEVELOPER
+------------------------------------------------------------
 
----
+Meera Sherin S
+Cloud and Full-Stack Developer
 
-## Developer
+------------------------------------------------------------
+RESUME SUMMARY
+------------------------------------------------------------
 
-**Meera Sherin S**
-Cloud & Full-Stack Developer
-
----
-```
-
----
-
-
-```
+Medi-Alert Buddy is a full-stack health monitoring and emergency alert web application built with React, TypeScript, Tailwind, shadcn-ui, and Supabase. The project includes medication scheduling, a searchable medicine database, a weight tracking module with charts and downloadable analytics, secure authentication, and a responsive UI.
